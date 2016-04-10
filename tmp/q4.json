@@ -1,0 +1,36 @@
+{
+      "id": "schemata/team",
+      "description": "Qiita:Team上で所属しているチームを表します。Qiita:Teamでのみ有効です。",
+      "links": [
+        {
+          "description": "ユーザが所属している全てのチームを、チーム作成日時の降順で返します。",
+          "href": "/api/v2/teams",
+          "method": "GET",
+          "rel": "instances",
+          "title": "list_teams"
+        }
+      ],
+      "properties": {
+        "active": {
+          "description": "チームが利用可能な状態かどうか",
+          "example": true,
+          "type": "boolean"
+        },
+        "id": {
+          "description": "チームの一意なID",
+          "example": "increments",
+          "type": "string"
+        },
+        "name": {
+          "description": "チームに設定されている名前を表します。",
+          "example": "Increments Inc.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "active",
+        "id",
+        "name"
+      ],
+      "title": "チーム"
+}

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "justinrainbow/json-schema": "^1.6",
+        "symfony/yaml": "^3.0"
+    }
+}
